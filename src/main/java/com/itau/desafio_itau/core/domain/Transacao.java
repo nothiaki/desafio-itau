@@ -13,7 +13,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Transacao {
 
-  private Float valor;
+  private Double valor;
   private OffsetDateTime dataHora;
 
   public Transacao(RequestTransacaoDTO requestTransacao) {

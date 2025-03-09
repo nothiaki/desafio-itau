@@ -9,7 +9,7 @@ public record RequestTransacaoDTO (
 
   @NotNull
   @Min(value = 0)
-  Float valor,
+  Double valor,
 
   @NotNull
   OffsetDateTime dataHora
