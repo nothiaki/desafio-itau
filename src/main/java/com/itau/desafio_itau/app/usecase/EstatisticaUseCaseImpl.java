@@ -23,7 +23,7 @@ public class EstatisticaUseCaseImpl implements EstatisticaUseCase {
   public Estatistica execute() {
 
     List<Transacao> transacoesLastMinute = transacaoRepository.getTransacoes().stream()
-      .filter(t -> t.getDataHora().isAfter(OffsetDateTime.now().minusMinutes(5)))
+      .filter(t -> t.getDataHora().isAfter(OffsetDateTime.now().minusMinutes(1)))
       .collect(Collectors.toList());
 
     Long count = Long.valueOf(transacoesLastMinute.size());
